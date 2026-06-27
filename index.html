@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunlyn Pilates World — Premium Reformer & Cadillac Manufacturer | Worldwide Shipping</title>
+<meta name="description" content="Sunlyn manufactures studio-grade Reformer and Cadillac equipment and ships worldwide from Türkiye. Best price & quality guarantee, ~10-day delivery, Stripe & PayPal. Ask for your custom quote.">
+<meta property="og:title" content="Sunlyn Pilates World — Premium Reformers, Shipped Worldwide">
+<meta property="og:description" content="Studio-grade Reformer & Cadillac equipment, built in Türkiye. Best price & quality guarantee · ~10-day delivery · worldwide shipping.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --o:#FF7A1A;        /* primary orange   */
+  --o-deep:#E0480A;   /* deep orange      */
+  --o-amber:#FFB24D;  /* amber highlight  */
+  --bg:#0B0705;       /* warm black       */
+  --s1:#171009;       /* warm surface     */
+  --w:#F8F0E8;        /* warm white       */
+  --muted:#8C7C6E;    /* warm muted       */
+  --wa:#25D366;       /* whatsapp green   */
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{background:var(--bg);color:var(--w);font-family:'Manrope',sans-serif;overflow-x:hidden;cursor:none}
+section[id],div[id]{scroll-margin-top:80px}
+
+/* CURSOR */
+#cur{width:10px;height:10px;background:var(--o);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width .2s,height .2s}
+#cur2{width:38px;height:38px;border:1.5px solid rgba(255,122,26,.4);border-radius:50%;position:fixed;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:all .18s ease}
+
+/* GRAIN */
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:300;opacity:.04;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:gn .45s steps(2) infinite}
+@keyframes gn{0%,100%{transform:translate(0,0)}25%{transform:translate(-3px,1px)}75%{transform:translate(2px,-2px)}}
+
+/* NAV */
+nav{position:absolute;top:0;left:0;right:0;z-index:500;padding:20px 64px;display:flex;align-items:center;justify-content:space-between;transition:background .4s}
+.logo{display:inline-flex;flex-direction:column;line-height:.86;user-select:none;text-decoration:none}
+.logo .mark{font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(21px,2.4vw,27px);letter-spacing:3.5px;color:var(--w)}
+.logo .script{font-family:'Dancing Script',cursive;font-weight:700;font-size:clamp(14px,1.7vw,17px);color:var(--o);margin-top:1px;margin-left:3px;letter-spacing:.5px}
+.nav-r{display:flex;align-items:center;gap:14px}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.nbtn{background:linear-gradient(120deg,var(--o-deep),var(--o));color:#fff;border:none;padding:12px 28px;font-family:'Manrope',sans-serif;font-weight:800;font-size:11px;letter-spacing:2px;text-transform:uppercase;cursor:none;transition:all .3s;position:relative;overflow:hidden}
+.nbtn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent);transition:left .5s}
+.nbtn:hover::before{left:100%}
+.nbtn:hover{box-shadow:0 8px 36px rgba(255,122,26,.5);transform:translateY(-1px)}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;text-align:center;padding:150px 64px 96px;background:linear-gradient(135deg,#0A0503 0%,var(--bg) 48%,#0A0503 100%)}
+.hero::before{content:'';position:absolute;inset:0;pointer-events:none;z-index:1;
+  background:radial-gradient(circle at 50% 36%,rgba(255,122,26,.14) 0%,transparent 44%),linear-gradient(to bottom,rgba(255,255,255,.02),transparent 30%,rgba(224,72,10,.05))}
+/* signature sun-streak */
+.sunbeam{position:absolute;inset:-15% -10%;z-index:1;pointer-events:none;
+  background:
+    radial-gradient(58% 75% at 16% 8%, rgba(255,160,70,.26), transparent 60%),
+    radial-gradient(46% 64% at 84% 26%, rgba(224,72,10,.20), transparent 62%),
+    linear-gradient(118deg, transparent 34%, rgba(255,122,26,.12) 50%, transparent 66%);
+  filter:blur(6px)}
+.hero-l{display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative;z-index:3;max-width:1000px;margin:0 auto}
+.hero-paths{position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.22}
+.hbadge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,122,26,.45);background:rgba(255,122,26,.08);padding:6px 14px;font-size:10px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:var(--o-amber);margin-bottom:28px;border-radius:40px}
+.bdot{width:5px;height:5px;background:var(--o);border-radius:50%;animation:blink 2s infinite}
+h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(58px,6.4vw,108px);line-height:.9;letter-spacing:2px}
+h1 .r{background:linear-gradient(120deg,var(--o-deep),var(--o),var(--o-amber));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hsub{font-size:16px;color:#A99B8E;line-height:1.75;max-width:660px;margin:26px auto 40px}
+.hsub strong{color:var(--w);font-weight:700}
+.ctarow{display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap}
+.btnmain{background:linear-gradient(120deg,var(--o-deep),var(--o));color:#fff;border:none;padding:18px 44px;font-family:'Manrope',sans-serif;font-weight:800;font-size:12px;letter-spacing:2px;text-transform:uppercase;cursor:none;transition:all .3s;position:relative;overflow:hidden;display:inline-block;text-decoration:none}
+.btnmain:hover{transform:translateY(-2px);box-shadow:0 16px 52px rgba(255,122,26,.52)}
+.hnote{font-size:11.5px;color:#6A5C4E;line-height:1.65;text-align:left}
+.hnote span{color:var(--o-amber)}
+
+/* TICKER */
+.ticker{overflow:hidden;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05);padding:13px 0;background:rgba(255,122,26,.04)}
+.tick-inner{display:flex;animation:tick 26s linear infinite;white-space:nowrap}
+.ti{font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:3px;color:rgba(248,240,232,.12);padding:0 30px}
+.ti.r{color:rgba(255,122,26,.6)}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* SECTIONS */
+section{padding:110px 64px}
+.smx{max-width:1160px;margin:0 auto}
+.stag{font-size:10px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--o)}
+.sline{width:44px;height:2px;background:linear-gradient(90deg,var(--o-deep),var(--o-amber));margin:12px 0 20px}
+.stitle{font-family:'Bebas Neue',sans-serif;font-size:clamp(42px,4.2vw,74px);line-height:.95;letter-spacing:2px}
+.sdesc{font-size:15px;color:var(--muted);line-height:1.8;max-width:580px;margin-top:14px}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease}
+.rv.on{opacity:1;transform:translateY(0)}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+/* ── REALITY CHECK ── */
+.biktor{padding:120px 64px;position:relative;overflow:hidden;background:linear-gradient(135deg,#0A0503 0%,var(--bg) 50%,#0A0503 100%);text-align:center}
+.biktor-paths{position:absolute;inset:0;pointer-events:none;opacity:.32}
+.biktor-inner{position:relative;z-index:2;max-width:900px;margin:0 auto}
+.biktor-tag{display:inline-block;background:rgba(255,122,26,.12);border:1px solid rgba(255,122,26,.3);color:var(--o-amber);font-size:10px;font-weight:800;letter-spacing:3px;text-transform:uppercase;padding:6px 16px;margin-bottom:28px;border-radius:40px}
+.biktor h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,6vw,92px);line-height:.95;letter-spacing:2px;margin-bottom:24px}
+.biktor h2 span{background:linear-gradient(120deg,var(--o-deep),var(--o),var(--o-amber));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.biktor p{font-size:17px;color:#998979;line-height:1.8;max-width:700px;margin:0 auto 48px}
+.biktor p strong{color:var(--w)}
+.response-shift{max-width:860px;margin:0 auto;border:1px solid rgba(255,122,26,.22);background:linear-gradient(135deg,rgba(23,16,9,.9),rgba(11,7,5,.78));box-shadow:0 28px 80px rgba(0,0,0,.45);padding:34px;display:grid;grid-template-columns:1fr 130px 1fr;gap:22px;align-items:center;text-align:left;position:relative;overflow:hidden;border-radius:8px}
+.response-shift::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,transparent,rgba(255,122,26,.09),transparent);transform:translateX(-100%);animation:shine 5s ease-in-out infinite;pointer-events:none}
+@keyframes shine{0%{transform:translateX(-100%)}55%,100%{transform:translateX(100%)}}
+.time-block{position:relative;z-index:1}
+.time-kicker{font-size:10px;font-weight:800;letter-spacing:2.4px;text-transform:uppercase;color:#7A6A5C;margin-bottom:10px}
+.time-value{font-family:'Bebas Neue',sans-serif;font-size:clamp(54px,6vw,86px);line-height:.85;letter-spacing:1px}
+.time-block.slow .time-value{color:rgba(255,122,26,.45)}
+.time-block.fast .time-value{color:var(--o);text-shadow:0 0 32px rgba(255,122,26,.3)}
+.time-desc{font-size:13px;color:#766656;line-height:1.65;margin-top:12px}
+.time-bar{height:9px;border:1px solid rgba(255,255,255,.06);background:#1A130C;margin-top:18px;overflow:hidden;border-radius:6px}
+.time-bar span{display:block;height:100%;background:linear-gradient(90deg,rgba(255,122,26,.4),var(--o))}
+.time-block.slow .time-bar span{width:100%;opacity:.5}
+.time-block.fast .time-bar span{width:16%;box-shadow:0 0 22px rgba(255,122,26,.8)}
+.response-arrow{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;color:var(--o);font-size:10px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase}
+.response-arrow-line{width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,122,26,.9),transparent)}
+.response-arrow-dot{width:18px;height:18px;border:1px solid rgba(255,122,26,.7);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.response-arrow-dot::after{content:'';width:6px;height:6px;background:var(--o);border-radius:50%}
+.response-note{grid-column:1/-1;position:relative;z-index:1;border-top:1px solid rgba(255,255,255,.06);padding-top:18px;text-align:center;font-size:13px;color:#8A7A6C;line-height:1.7}
+.response-note strong{color:var(--w)}
+
+/* COMPARE (cheap vs sunlyn) */
+.ba{display:grid;grid-template-columns:1fr 70px 1fr;gap:0;margin-top:60px;align-items:stretch}
+.cbox{background:#0A0604;border-radius:18px;padding:24px;border:1px solid rgba(255,255,255,.06)}
+.cbox.bf{border-color:rgba(255,122,26,.14)}
+.cbox.af{border-color:rgba(255,122,26,.32);background:linear-gradient(180deg,rgba(255,122,26,.05),#0A0604 60%)}
+.clbl{font-size:10px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.06);margin-bottom:8px;color:var(--o)}
+.crow{display:flex;align-items:flex-start;gap:13px;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.crow:last-of-type{border-bottom:none}
+.cic{flex-shrink:0;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.cic svg{width:13px;height:13px;stroke-width:2.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.bf .cic{background:rgba(120,90,70,.18)}.bf .cic svg{stroke:#9A7A66}
+.af .cic{background:rgba(255,122,26,.16)}.af .cic svg{stroke:var(--o)}
+.crow h5{font-size:14px;font-weight:700;color:var(--w);margin-bottom:3px;letter-spacing:.2px}
+.crow p{font-size:12.5px;color:#766656;line-height:1.55}
+.bf .crow h5{color:#B7A797}
+.rpill{margin-top:18px;padding:14px 16px;border-radius:4px}
+.rpill.bad{background:rgba(120,90,70,.1);border-left:3px solid #9A7A66}
+.rpill.good{background:rgba(255,122,26,.08);border-left:3px solid var(--o)}
+.rpill .rl{font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#6A5C4E;margin-bottom:4px}
+.rpill .rv2{font-size:13.5px;color:#C6B6A6;font-weight:600}
+.rpill.good .rv2{color:var(--o-amber)}
+.vscol{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 16px}
+.vsline{flex:1;width:1px;background:rgba(255,255,255,.05)}
+.vstxt{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#2A2018;letter-spacing:2px;padding:10px 0}
+
+/* HOW IT WORKS */
+.steps{margin-top:56px}
+.step{display:grid;grid-template-columns:68px 1fr;gap:32px;padding:34px 0;border-bottom:1px solid rgba(255,255,255,.05);transition:padding-left .35s}
+.step:last-child{border:none}
+.step:hover{padding-left:14px}
+.snum{font-family:'Bebas Neue',sans-serif;font-size:68px;color:rgba(255,122,26,.12);line-height:1;transition:color .3s}
+.step:hover .snum{color:rgba(255,122,26,.5)}
+.scip{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,122,26,.22);background:rgba(255,122,26,.06);padding:3px 10px;font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--o-amber);margin-bottom:10px;border-radius:30px}
+.sh{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:2px;margin-bottom:8px}
+.sp{font-size:14px;color:var(--muted);line-height:1.8;max-width:580px}
+
+/* STATS */
+.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.06);margin-top:56px;border-radius:8px;overflow:hidden}
+.scard{background:var(--bg);padding:56px 34px;text-align:center;position:relative;overflow:hidden;transition:background .35s}
+.scard:hover{background:rgba(255,122,26,.05)}
+.scard::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--o-deep),var(--o-amber));transform:scaleX(0);transition:transform .4s;transform-origin:left}
+.scard:hover::before{transform:scaleX(1)}
+.snum2{font-family:'Bebas Neue',sans-serif;font-size:clamp(50px,4.5vw,76px);color:var(--o);line-height:1;display:block;margin-bottom:10px}
+.slbl{font-size:12px;color:#9A8A7A;letter-spacing:1px;font-weight:700;text-transform:uppercase}
+.ssub{font-size:11px;color:#5A4C40;margin-top:6px}
+
+/* VALUE BOX */
+.sim{margin-top:56px;padding:46px 48px;background:var(--s1);border:1px solid rgba(255,255,255,.06);position:relative;border-radius:6px;overflow:hidden}
+.sim::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--o-deep),var(--o-amber))}
+.simgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:28px}
+.simcol{text-align:center;padding:20px}
+.simlbl{font-size:10px;color:#6A5C4E;letter-spacing:2px;font-weight:800;text-transform:uppercase;margin-bottom:8px}
+.simn{font-family:'Bebas Neue',sans-serif;font-size:50px;color:var(--o);line-height:1}
+.simsub{font-size:10.5px;color:#5A4C40;margin-top:6px}
+.simdiv{border-left:1px solid rgba(255,255,255,.05);border-right:1px solid rgba(255,255,255,.05)}
+
+/* FEATURES — DISPLAY CARDS */
+.features-section{position:relative;overflow:hidden}
+.feat-bg{position:absolute;inset:0;pointer-events:none;opacity:.18}
+.dc-wrap{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:64px}
+.dc-left{display:flex;flex-direction:column;gap:28px}
+.dc-item{padding:24px 28px;border:1px solid rgba(255,255,255,.05);background:rgba(255,255,255,.02);position:relative;transition:all .4s;cursor:default;border-radius:6px}
+.dc-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--o-deep),var(--o-amber));transform:scaleY(0);transition:transform .3s;transform-origin:bottom}
+.dc-item:hover::before{transform:scaleY(1)}
+.dc-item:hover{background:rgba(255,122,26,.04);border-color:rgba(255,122,26,.16)}
+.dc-item-tag{font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--o);margin-bottom:8px}
+.dc-item h4{font-family:'Bebas Neue',sans-serif;font-size:23px;letter-spacing:1.5px;margin-bottom:6px}
+.dc-item p{font-size:13px;color:#766656;line-height:1.75}
+.dc-right{display:grid;grid-template-areas:'stack';place-items:center;height:340px;position:relative}
+.dcard{grid-area:stack;position:relative;width:380px;height:160px;border:1.5px solid rgba(255,122,26,.2);background:rgba(23,16,9,.92);backdrop-filter:blur(12px);border-radius:14px;padding:20px 24px;transform:skewY(-5deg);display:flex;flex-direction:column;justify-content:space-between;transition:all .6s cubic-bezier(.22,1,.36,1);cursor:default;overflow:hidden}
+.dcard::after{content:'';position:absolute;right:-2px;top:-5%;height:110%;width:120px;background:linear-gradient(to left,var(--bg),transparent)}
+.dcard:nth-child(1){transform:skewY(-5deg) translateY(0) translateX(0);filter:grayscale(70%);z-index:1}
+.dcard:nth-child(2){transform:skewY(-5deg) translateY(20px) translateX(28px);filter:grayscale(40%);z-index:2}
+.dcard:nth-child(3){transform:skewY(-5deg) translateY(40px) translateX(56px);filter:grayscale(0%);z-index:3;border-color:rgba(255,122,26,.45)}
+.dc-right:hover .dcard:nth-child(1){transform:skewY(-5deg) translateY(-36px) translateX(0);filter:grayscale(0%)}
+.dc-right:hover .dcard:nth-child(2){transform:skewY(-5deg) translateY(4px) translateX(28px);filter:grayscale(0%)}
+.dc-right:hover .dcard:nth-child(3){transform:skewY(-5deg) translateY(44px) translateX(56px)}
+.dcard-icon{width:30px;height:30px;background:rgba(255,122,26,.15);border:1px solid rgba(255,122,26,.3);display:flex;align-items:center;justify-content:center;border-radius:6px;margin-bottom:4px}
+.dcard-icon svg{width:15px;height:15px;stroke:var(--o);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.dcard-title{font-family:'Bebas Neue',sans-serif;font-size:19px;letter-spacing:1px;color:var(--w)}
+.dcard-desc{font-size:12px;color:#6A5C4E;line-height:1.5}
+.dcard-meta{font-size:10px;color:var(--o-amber);letter-spacing:1px;font-weight:700}
+
+/* QUOTE / LEAD FORM */
+#quote{position:relative;text-align:center;background:linear-gradient(to bottom,transparent,rgba(255,122,26,.03),transparent);overflow:hidden}
+.pglow{position:absolute;top:42%;left:50%;transform:translate(-50%,-50%);width:820px;height:820px;pointer-events:none;background:radial-gradient(circle,rgba(255,122,26,.09) 0%,transparent 64%)}
+.guar-banner{display:inline-flex;align-items:center;gap:10px;margin:30px auto 0;border:1px solid rgba(255,122,26,.35);background:rgba(255,122,26,.08);padding:11px 22px;font-size:11.5px;font-weight:700;letter-spacing:.6px;color:var(--w);border-radius:40px;flex-wrap:wrap;justify-content:center}
+.guar-banner .tdot{width:6px;height:6px;border-radius:50%;background:var(--o);animation:blink 1.6s infinite;flex-shrink:0}
+.qform{max-width:680px;margin:44px auto 0;text-align:left;background:linear-gradient(180deg,rgba(23,16,9,.95),rgba(11,7,5,.9));border:1px solid rgba(255,122,26,.2);border-radius:16px;padding:38px 36px;position:relative;z-index:1;box-shadow:0 30px 90px rgba(0,0,0,.5)}
+.qrow{margin-bottom:22px}
+.qrow.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.qlbl{display:block;font-size:11px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:var(--o-amber);margin-bottom:9px}
+.qlbl span{color:#5A4C40;font-weight:600}
+.qinput,.qselect,.qarea{width:100%;background:#0A0604;border:1px solid rgba(255,255,255,.1);color:var(--w);font-family:'Manrope',sans-serif;font-size:15px;padding:14px 16px;border-radius:9px;transition:border-color .25s,box-shadow .25s;cursor:none}
+.qarea{min-height:96px;resize:vertical;line-height:1.6}
+.qinput::placeholder,.qarea::placeholder{color:#5A4C40}
+.qinput:focus,.qselect:focus,.qarea:focus{outline:none;border-color:var(--o);box-shadow:0 0 0 3px rgba(255,122,26,.14)}
+.qselect{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23FF7A1A' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.qselect option{background:#0A0604;color:var(--w)}
+.qtoggle{display:flex;gap:10px}
+.qtoggle label{flex:1;cursor:none}
+.qtoggle input{position:absolute;opacity:0;pointer-events:none}
+.qtoggle .pill{display:block;text-align:center;padding:13px 12px;border:1px solid rgba(255,255,255,.1);border-radius:9px;font-size:13px;font-weight:700;color:#998979;transition:all .25s;background:#0A0604}
+.qtoggle input:checked + .pill{border-color:var(--o);background:rgba(255,122,26,.1);color:var(--o-amber);box-shadow:0 0 0 3px rgba(255,122,26,.1)}
+.qsubmit{width:100%;margin-top:6px;padding:18px;font-family:'Manrope',sans-serif;font-weight:800;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;color:#fff;background:linear-gradient(120deg,var(--o-deep),var(--o));border:none;border-radius:10px;cursor:none;transition:all .3s;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:10px}
+.qsubmit svg{width:18px;height:18px;fill:#fff}
+.qsubmit::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent);transition:left .6s}
+.qsubmit:hover::before{left:100%}
+.qsubmit:hover{box-shadow:0 16px 44px rgba(255,122,26,.5);transform:translateY(-1px)}
+.qhint{font-size:11px;color:#5A4C40;text-align:center;margin-top:14px;line-height:1.6}
+.support-box{max-width:680px;margin:24px auto 0;padding:26px 30px;border:1px solid rgba(37,211,102,.2);background:linear-gradient(135deg,rgba(37,211,102,.06),rgba(23,16,9,.9));display:flex;align-items:center;justify-content:space-between;gap:24px;text-align:left;border-radius:14px;position:relative;z-index:1}
+.support-kicker{font-size:10px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:var(--wa);margin-bottom:8px}
+.support-box h3{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:1px;line-height:1;margin-bottom:8px}
+.support-box p{font-size:13px;color:#766656;line-height:1.6}
+.support-btn{flex-shrink:0;display:inline-flex;align-items:center;gap:9px;background:var(--wa);color:#fff;text-decoration:none;padding:15px 24px;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;border-radius:10px;box-shadow:0 12px 36px rgba(37,211,102,.24);transition:transform .25s,box-shadow .25s;cursor:none}
+.support-btn svg{width:17px;height:17px;fill:#fff}
+.support-btn:hover{transform:translateY(-2px);box-shadow:0 18px 44px rgba(37,211,102,.36)}
+.pnote{font-size:11px;color:#5A4C40;margin-top:26px;letter-spacing:.5px;position:relative;z-index:1}
+
+/* FAQ */
+.faqwrap{max-width:760px;margin:0 auto;padding:100px 64px}
+.fi{border-bottom:1px solid rgba(255,255,255,.06);cursor:none}
+.fq{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-size:16px;font-weight:700;gap:16px;color:var(--w)}
+.farr{color:var(--o);font-size:24px;transition:transform .3s;flex-shrink:0;line-height:1}
+.fi.open .farr{transform:rotate(45deg)}
+.fa{font-size:14px;color:#8A7A6C;line-height:1.9;padding-bottom:22px;display:none}
+.fi.open .fa{display:block}
+
+/* FOOTER */
+footer{border-top:1px solid rgba(255,255,255,.05);padding:52px 64px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.ftagline{font-size:10px;color:#4A3C30;letter-spacing:1.5px;margin-top:8px;text-transform:uppercase}
+.fcopy{font-size:11px;color:#4A3C30}
+.flinks{display:flex;gap:22px;flex-wrap:wrap}
+.flinks a{font-size:11px;color:#6A5C4E;text-decoration:none;transition:color .2s;letter-spacing:.5px}
+.flinks a:hover{color:var(--o)}
+
+/* MOBILE STICKY BAR */
+.mobilebar{display:none}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  nav{padding:18px 22px}
+  .nbtn{padding:11px 18px;font-size:10px;letter-spacing:1.4px}
+  .hero{padding:130px 22px 90px}
+  .ba{grid-template-columns:1fr;gap:16px}
+  .vscol{flex-direction:row;padding:6px 0}
+  .vscol .vsline{height:1px;width:auto;flex:1}
+  .vstxt{padding:0 14px}
+  .sgrid{grid-template-columns:1fr}
+  .response-shift{grid-template-columns:1fr;text-align:center;padding:26px 20px}
+  .time-bar{max-width:320px;margin:18px auto 0}
+  .response-arrow{flex-direction:row}
+  .response-arrow-line{height:1px;width:48px}
+  .support-box{flex-direction:column;align-items:stretch;text-align:center;padding:24px 20px}
+  .support-btn{justify-content:center}
+  .simgrid{grid-template-columns:1fr;gap:0}
+  .simdiv{border:none;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05)}
+  .dc-wrap{grid-template-columns:1fr;gap:44px}
+  .dc-right{display:none}
+  .ctarow{flex-direction:column;gap:16px}
+  .btnmain{width:100%;max-width:320px}
+  .hnote{text-align:center}
+  section{padding:78px 22px}
+  .biktor{padding:78px 22px}
+  .faqwrap{padding:80px 22px}
+  .qform{padding:28px 20px}
+  .qrow.two{grid-template-columns:1fr;gap:22px}
+  footer{padding:40px 22px;flex-direction:column;text-align:center}
+  .flinks{justify-content:center}
+  /* sticky mobile CTA bar */
+  body{padding-bottom:70px;cursor:auto}
+  .mobilebar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:600;padding:11px 14px;gap:10px;background:rgba(11,7,5,.92);backdrop-filter:blur(14px);border-top:1px solid rgba(255,122,26,.2)}
+  .mobilebar a{flex:1;text-align:center;padding:15px 10px;border-radius:10px;font-size:13px;font-weight:800;letter-spacing:.6px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px}
+  .mobilebar svg{width:17px;height:17px}
+  .mb-quote{background:linear-gradient(120deg,var(--o-deep),var(--o));color:#fff}
+  .mb-wa{background:var(--wa);color:#fff;fill:#fff}
+}
+/* touch devices: no fake cursor */
+@media(hover:none){#cur,#cur2{display:none!important}body{cursor:auto}*{cursor:auto!important}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.tick-inner,.response-shift::before,.hero-paths *,.biktor-paths *,.feat-bg *{animation:none!important}}
+</style>
+</head>
+<body>
+<div id="cur"></div>
+<div id="cur2"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="logo" href="#" aria-label="Sunlyn Pilates World">
+    <span class="mark">SUNLYN</span>
+    <span class="script">Pilates World</span>
+  </a>
+  <div class="nav-r">
+    <button class="nbtn" onclick="goQuote()">Get a Quote</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="sunbeam"></div>
+  <svg class="hero-paths" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+    <defs><style>
+      .hp{stroke:rgba(255,122,26,0.55);fill:none;stroke-width:0.65}
+      @keyframes heroFlow{0%{stroke-dashoffset:2600}100%{stroke-dashoffset:0}}
+    </style></defs>
+    <path class="hp" d="M-160 -120C-80 160 100 390 420 540C760 700 960 920 1080 1160" stroke-dasharray="2600" style="animation:heroFlow 23s linear infinite"/>
+    <path class="hp" d="M-80 -80C10 200 190 420 520 560C860 706 1050 900 1160 1110" stroke-dasharray="2600" style="animation:heroFlow 28s linear infinite 1.4s"/>
+    <path class="hp" d="M1380 -80C1270 210 1060 440 740 575C420 710 260 930 150 1160" stroke-dasharray="2600" style="animation:heroFlow 25s linear infinite .7s"/>
+    <path class="hp" d="M1120 740C860 560 750 300 620 90C500 -120 360 -310 120 -440" stroke-dasharray="2600" style="animation:heroFlow 30s linear infinite 2s" opacity=".55"/>
+  </svg>
+  <div class="hero-l">
+    <div class="hbadge"><span class="bdot"></span>Reformer &amp; Cadillac Manufacturer · Türkiye</div>
+    <h1>
+      REFORMER &amp; CADILLAC<br>
+      <span class="r">MADE IN TÜRKİYE.</span><br>
+      SHIPPED WORLDWIDE.
+    </h1>
+    <p class="hsub">
+      Sunlyn builds <strong>studio-grade Reformer and Cadillac equipment</strong> and ships it worldwide from Türkiye.
+      Premium quality, <strong>best price guarantee</strong>, and around <strong>10-day delivery</strong> — so your studio opens strong, on time.
+    </p>
+    <div class="ctarow">
+      <a class="btnmain" href="#quote" onclick="goQuote();return false;">Ask for Your Quote</a>
+      <div class="hnote">Stripe &amp; PayPal accepted.<br><span>Ships to every country · ~10-day delivery.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="tick-inner" id="tick">
+    <span class="ti r">●</span><span class="ti">REFORMER</span>
+    <span class="ti r">●</span><span class="ti">CADILLAC</span>
+    <span class="ti r">●</span><span class="ti">WORLDWIDE SHIPPING</span>
+    <span class="ti r">●</span><span class="ti">MADE IN TÜRKİYE</span>
+    <span class="ti r">●</span><span class="ti">BEST PRICE GUARANTEE</span>
+    <span class="ti r">●</span><span class="ti">PREMIUM QUALITY</span>
+    <span class="ti r">●</span><span class="ti">~10-DAY DELIVERY</span>
+    <span class="ti r">●</span><span class="ti">STRIPE &amp; PAYPAL</span>
+  </div>
+</div>
+
+<!-- REALITY CHECK -->
+<div class="biktor">
+  <svg class="biktor-paths" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice">
+    <defs><style>
+      .bp{stroke:rgba(255,122,26,0.6);fill:none;stroke-width:0.8}
+      @keyframes flow{0%{stroke-dashoffset:2000}100%{stroke-dashoffset:0}}
+    </style></defs>
+    <path class="bp" d="M-200 -100C-200 -100 -50 300 400 500C850 700 950 1100 950 1100" stroke-dasharray="2000" style="animation:flow 18s linear infinite"/>
+    <path class="bp" d="M-150 -80C-150 -80 0 320 450 520C900 720 1000 1120 1000 1120" stroke-dasharray="2000" style="animation:flow 22s linear infinite 1s"/>
+    <path class="bp" d="M-100 -60C-100 -60 50 340 500 540C950 740 1050 1140 1050 1140" stroke-dasharray="2000" style="animation:flow 26s linear infinite 2s"/>
+    <path class="bp" d="M1400 -50C1400 -50 1250 350 800 550C350 750 250 1150 250 1150" stroke-dasharray="2000" style="animation:flow 20s linear infinite 0.5s"/>
+    <path class="bp" d="M100 -120C100 -120 200 280 600 480C1000 680 1100 1080 1100 1080" stroke-dasharray="2000" style="animation:flow 16s linear infinite 3s"/>
+    <path class="bp" d="M200 600C200 600 400 300 600 100C800 -100 900 -400 900 -400" stroke-dasharray="2000" style="animation:flow 20s linear infinite 2s" opacity=".5"/>
+  </svg>
+  <div class="biktor-inner rv">
+    <div class="biktor-tag">// Reality Check</div>
+    <h2>OPENING A STUDIO?<br><span>DON'T WAIT MONTHS.</span></h2>
+    <p>
+      Cheap imports cut corners and clients notice on day one. And most overseas orders keep you waiting weeks.
+      <strong>Sunlyn is built to last and ships in about 10 days</strong> — factory-direct from Türkiye, so you open on schedule.
+    </p>
+    <div class="response-shift rv d1">
+      <div class="time-block slow">
+        <div class="time-kicker">Typical overseas order</div>
+        <div class="time-value">6–8 WK</div>
+        <div class="time-desc">Your opening date slips while you wait on production and freight.</div>
+        <div class="time-bar"><span></span></div>
+      </div>
+      <div class="response-arrow">
+        <div class="response-arrow-line"></div>
+        <div class="response-arrow-dot"></div>
+        <div>Sunlyn express</div>
+        <div class="response-arrow-line"></div>
+      </div>
+      <div class="time-block fast">
+        <div class="time-kicker">With Sunlyn</div>
+        <div class="time-value">~10 DAYS</div>
+        <div class="time-desc">Crafted and dispatched fast — worldwide, on schedule.</div>
+        <div class="time-bar"><span></span></div>
+      </div>
+      <div class="response-note">
+        <strong>It's not just price — it's trust.</strong> Premium build, on-time delivery, and support that's ready after the sale.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHEAP vs SUNLYN -->
+<section>
+  <div class="smx">
+    <div class="rv">
+      <p class="stag">// Cheap vs Sunlyn</p>
+      <div class="sline"></div>
+      <h2 class="stitle">CHEAP SHOWS FAST.<br>QUALITY STAYS.</h2>
+      <p class="sdesc">Buyers feel the difference in the first class. Sunlyn is built to last — precision frames, premium upholstery, and support that's there long after delivery.</p>
+    </div>
+    <div class="ba rv" style="transition-delay:.15s">
+
+      <!-- CHEAP -->
+      <div class="cbox bf">
+        <div class="clbl">— Cheap Equipment</div>
+        <div class="crow"><span class="cic"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><div><h5>Frame flex &amp; wobble</h5><p>Thin steel and loose joints that shift under load.</p></div></div>
+        <div class="crow"><span class="cic"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><div><h5>Upholstery peels in months</h5><p>Low-grade foam and vinyl that cracks and stains.</p></div></div>
+        <div class="crow"><span class="cic"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><div><h5>No spare parts, no support</h5><p>Once it breaks, you're on your own.</p></div></div>
+        <div class="crow"><span class="cic"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><div><h5>Clients feel the difference</h5><p>It shows in the first class — and in your reviews.</p></div></div>
+        <div class="rpill bad"><div class="rl">Result</div><div class="rv2">Costly replacements — and lost trust.</div></div>
+      </div>
+
+      <div class="vscol"><div class="vsline"></div><div class="vstxt">VS</div><div class="vsline"></div></div>
+
+      <!-- SUNLYN -->
+      <div class="cbox af">
+        <div class="clbl">+ Sunlyn Built</div>
+        <div class="crow"><span class="cic"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div><h5>Precision-welded steel frame</h5><p>Rock-solid under daily, full-studio load.</p></div></div>
+        <div class="crow"><span class="cic"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div><h5>Premium, long-life upholstery</h5><p>High-density foam and durable covers, your choice of color.</p></div></div>
+        <div class="crow"><span class="cic"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div><h5>Spare parts &amp; repair ready</h5><p>Calm expert support keeps your studio moving.</p></div></div>
+        <div class="crow"><span class="cic"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><div><h5>Studio-grade, class after class</h5><p>The quality your clients notice — for years.</p></div></div>
+        <div class="rpill good"><div class="rl">Result</div><div class="rv2">Built to last — reliable from day one.</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section style="background:linear-gradient(to bottom,transparent,rgba(255,122,26,.02),transparent)">
+  <div class="smx">
+    <div class="rv">
+      <p class="stag">// How it works</p>
+      <div class="sline"></div>
+      <h2 class="stitle">FROM QUOTE TO<br><span style="color:var(--o)">YOUR STUDIO DOOR.</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step rv">
+        <div class="snum">01</div>
+        <div>
+          <div class="scip">You send</div>
+          <div class="sh">TELL US WHAT YOU NEED</div>
+          <p class="sp">Send the equipment, quantity, your country &amp; city, and any custom requests — color, upholstery, material — via the form or WhatsApp. It takes a minute.</p>
+        </div>
+      </div>
+      <div class="step rv d1">
+        <div class="snum">02</div>
+        <div>
+          <div class="scip">We reply</div>
+          <div class="sh">GET YOUR CUSTOM QUOTE</div>
+          <p class="sp">We confirm the spec and send our best price with a quality guarantee. When you're ready, pay securely via Stripe or PayPal in your currency.</p>
+        </div>
+      </div>
+      <div class="step rv d2">
+        <div class="snum">03</div>
+        <div>
+          <div class="scip">We deliver</div>
+          <div class="sh">WE BUILD &amp; SHIP WORLDWIDE</div>
+          <p class="sp">Your reformers are crafted and dispatched in about 10 days to any country, with after-sales support and spare parts ready when you need them.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS + VALUE -->
+<section id="stats">
+  <div class="smx">
+    <div style="text-align:center" class="rv">
+      <p class="stag" style="display:flex;justify-content:center">// The numbers</p>
+      <div class="sline" style="margin:12px auto"></div>
+      <h2 class="stitle">WHY BUY<br><span style="color:var(--o)">FROM SUNLYN?</span></h2>
+    </div>
+    <div class="sgrid">
+      <div class="scard rv"><span class="snum2" data-to="10" data-suf="">0</span><div class="slbl">Days Avg. Delivery</div><div class="ssub">Production + worldwide dispatch</div></div>
+      <div class="scard rv d1"><span class="snum2" data-to="190" data-suf="+">0+</span><div class="slbl">Countries We Ship To</div><div class="ssub">Export from Türkiye, every continent</div></div>
+      <div class="scard rv d2"><span class="snum2" data-to="100" data-suf="%">0%</span><div class="slbl">Price &amp; Quality Guarantee</div><div class="ssub">Best price, built to last</div></div>
+    </div>
+    <div class="sim rv" style="transition-delay:.1s">
+      <div style="padding-left:22px">
+        <p class="stag">// Factory-direct pricing</p>
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:2px;margin:10px 0 6px">WHY STUDIOS OVERPAY — AND HOW SUNLYN FIXES IT</h3>
+        <p style="font-size:12.5px;color:#6A5C4E">Buying through local distributors stacks markups. Sunlyn ships straight from our workshop in Türkiye:</p>
+        <div class="simgrid">
+          <div class="simcol"><div class="simlbl">Buying Local</div><div class="simn" style="color:rgba(255,122,26,.5)">2–3×</div><div class="simsub">distributor + reseller margin</div></div>
+          <div class="simcol simdiv"><div class="simlbl">Sunlyn Direct</div><div class="simn">1×</div><div class="simsub">straight from the factory</div></div>
+          <div class="simcol"><div class="simlbl">You Save</div><div class="simn" style="color:var(--w)">30–50%</div><div class="simsub">vs local retail price</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section">
+  <svg class="feat-bg" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none">
+    <defs><style>
+      .fp2{stroke:rgba(255,122,26,0.5);fill:none}
+      @keyframes fp-flow{0%{stroke-dashoffset:3000}100%{stroke-dashoffset:0}}
+    </style></defs>
+    <path class="fp2" stroke-width="0.6" d="M0 700C200 500 400 100 800 50C1000 25 1200 100 1400 0" stroke-dasharray="3000" style="animation:fp-flow 25s linear infinite"/>
+    <path class="fp2" stroke-width="0.5" d="M-100 600C100 400 300 0 700 -50C900 -75 1100 0 1300 -100" stroke-dasharray="3000" style="animation:fp-flow 30s linear infinite 2s"/>
+    <path class="fp2" stroke-width="0.4" d="M100 800C300 600 500 200 900 150C1100 125 1300 200 1500 100" stroke-dasharray="3000" style="animation:fp-flow 20s linear infinite 4s"/>
+    <path class="fp2" stroke-width="0.7" d="M1200 700C1000 500 800 100 400 50C200 25 0 100 -200 0" stroke-dasharray="3000" style="animation:fp-flow 22s linear infinite 1s"/>
+  </svg>
+  <div class="smx" style="position:relative;z-index:2">
+    <div class="rv">
+      <p class="stag">// What makes Sunlyn different</p>
+      <div class="sline"></div>
+      <h2 class="stitle">BUILT DIFFERENT.<br><span style="color:var(--o)">SHIPPED SMARTER.</span></h2>
+    </div>
+    <div class="dc-wrap">
+      <div class="dc-left">
+        <div class="dc-item rv">
+          <div class="dc-item-tag">01 — Quality</div>
+          <h4>PREMIUM, BUILT TO LAST</h4>
+          <p>Precision-welded frames and long-life upholstery. Quality you feel in the first class — and years later.</p>
+        </div>
+        <div class="dc-item rv d1">
+          <div class="dc-item-tag">02 — Range</div>
+          <h4>REFORMER &amp; CADILLAC</h4>
+          <p>Studio-grade Reformer and Cadillac equipment for modern studios — configured the way you want it.</p>
+        </div>
+        <div class="dc-item rv d2">
+          <div class="dc-item-tag">03 — Shipping</div>
+          <h4>WORLDWIDE FROM TÜRKİYE</h4>
+          <p>Factory-direct export to every country, with secure Stripe &amp; PayPal payment and ~10-day delivery.</p>
+        </div>
+        <div class="dc-item rv d3">
+          <div class="dc-item-tag">04 — Support</div>
+          <h4>AFTER-SALES SUPPORT</h4>
+          <p>Spare parts and calm expert repair support, ready when you need them. Repair keeps studios moving.</p>
+        </div>
+      </div>
+      <div class="dc-right rv d1">
+        <div class="dcard">
+          <div>
+            <div class="dcard-icon"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div>
+            <div class="dcard-title">BEST PRICE GUARANTEE</div>
+          </div>
+          <div class="dcard-desc">Factory-direct — we beat local retail</div>
+          <div class="dcard-meta">QUALITY GUARANTEED</div>
+        </div>
+        <div class="dcard">
+          <div>
+            <div class="dcard-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg></div>
+            <div class="dcard-title">~10-DAY DELIVERY</div>
+          </div>
+          <div class="dcard-desc">Crafted and dispatched fast, worldwide</div>
+          <div class="dcard-meta">EXPRESS BUILD</div>
+        </div>
+        <div class="dcard">
+          <div>
+            <div class="dcard-icon"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div>
+            <div class="dcard-title">STRIPE &amp; PAYPAL</div>
+          </div>
+          <div class="dcard-desc">Pay securely, in your currency</div>
+          <div class="dcard-meta">SAFE CHECKOUT</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section id="quote">
+  <div class="pglow"></div>
+  <div class="smx" style="position:relative;z-index:1">
+    <div class="rv" style="text-align:center">
+      <p class="stag" style="display:flex;justify-content:center">// Get started</p>
+      <div class="sline" style="margin:12px auto"></div>
+      <h2 class="stitle">ASK FOR<br><span style="color:var(--o)">YOUR QUOTE.</span></h2>
+      <p style="font-size:15px;color:#8A7A6C;max-width:520px;margin:14px auto 0;line-height:1.8">Tell us what you need — we'll reply on WhatsApp with our best price and a quality guarantee. No commitment.</p>
+      <div class="guar-banner"><span class="tdot"></span>Best price &amp; quality guarantee · Ships worldwide · ~10-day delivery · Stripe &amp; PayPal</div>
+    </div>
+
+    <form class="qform rv d1" onsubmit="return sendQuote(event)">
+      <div class="qrow">
+        <label class="qlbl" for="q-equip">Which equipment?</label>
+        <select class="qselect" id="q-equip" name="equipment">
+          <option>Reformer</option>
+          <option>Cadillac / Trapeze Table</option>
+          <option>Reformer + Cadillac</option>
+          <option>Wall Unit Reformer</option>
+          <option>Full studio set</option>
+          <option>Other (tell us below)</option>
+        </select>
+      </div>
+      <div class="qrow two">
+        <div>
+          <label class="qlbl" for="q-qty">How many units?</label>
+          <input class="qinput" id="q-qty" name="quantity" type="number" min="1" inputmode="numeric" placeholder="e.g. 5">
+        </div>
+        <div>
+          <label class="qlbl" for="q-loc">Country &amp; city</label>
+          <input class="qinput" id="q-loc" name="location" type="text" placeholder="e.g. Berlin, Germany" required>
+        </div>
+      </div>
+      <div class="qrow">
+        <label class="qlbl" for="q-req">Special requests <span>— color, upholstery, material (optional)</span></label>
+        <textarea class="qarea" id="q-req" name="requests" placeholder="Color, upholstery material, frame finish, accessories…"></textarea>
+      </div>
+      <div class="qrow">
+        <label class="qlbl">Do you need fast delivery? <span>— we ship in ~10 days</span></label>
+        <div class="qtoggle">
+          <label><input type="radio" name="fast" value="Yes, fast delivery (~10 days)" checked><span class="pill">Yes, ~10 days</span></label>
+          <label><input type="radio" name="fast" value="Standard delivery is fine"><span class="pill">Standard is fine</span></label>
+        </div>
+      </div>
+      <div class="qrow two">
+        <div>
+          <label class="qlbl" for="q-name">Your name <span>(optional)</span></label>
+          <input class="qinput" id="q-name" name="fullname" type="text" placeholder="Your name">
+        </div>
+        <div>
+          <label class="qlbl" for="q-company">Studio / company <span>(optional)</span></label>
+          <input class="qinput" id="q-company" name="company" type="text" placeholder="Studio name">
+        </div>
+      </div>
+      <button class="qsubmit" type="submit">
+        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.728-.616z"/></svg>
+        Send My Request via WhatsApp
+      </button>
+      <p class="qhint">Opens WhatsApp with your details pre-filled — just hit send. We usually reply within hours.</p>
+    </form>
+
+    <div class="support-box rv d2">
+      <div>
+        <div class="support-kicker">Prefer to chat first?</div>
+        <h3>Message us on WhatsApp.</h3>
+        <p>Questions about models, materials, shipping or payment? Talk to us before you order — we'll help you choose.</p>
+      </div>
+      <a href="https://wa.me/905355155864?text=Hello%20Sunlyn!%20I%20have%20a%20question%20about%20your%20reformer%20%2F%20Cadillac%20equipment%20before%20I%20order." target="_blank" rel="noopener" class="support-btn">
+        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.728-.616z"/></svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+
+    <p class="pnote">Stripe &amp; PayPal · Ships to every country · Best price &amp; quality guarantee · No hidden fees</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<div class="faqwrap">
+  <div class="rv">
+    <p class="stag">// Frequently asked</p>
+    <div class="sline"></div>
+    <h2 class="stitle" style="margin-bottom:40px">QUESTIONS?<br><span style="color:var(--o)">ANSWERED.</span></h2>
+  </div>
+  <div class="fi rv" onclick="faqToggle(this)"><div class="fq">What equipment do you manufacture?<span class="farr">+</span></div><div class="fa">Studio-grade Reformers, Cadillacs (trapeze tables), wall-unit reformers and accessories — built to order with your choice of color, upholstery and material.</div></div>
+  <div class="fi rv" onclick="faqToggle(this)"><div class="fq">Do you ship to my country?<span class="farr">+</span></div><div class="fa">Yes. We export worldwide from Türkiye to every country and handle crating and freight. Tell us your country and city and we'll give you an exact delivery quote.</div></div>
+  <div class="fi rv" onclick="faqToggle(this)"><div class="fq">How long does delivery take?<span class="farr">+</span></div><div class="fa">About 10 days on average for production and dispatch. Express options are available — just let us know your studio's opening date and we'll work to it.</div></div>
+  <div class="fi rv" onclick="faqToggle(this)"><div class="fq">How do I pay?<span class="farr">+</span></div><div class="fa">Securely via Stripe or PayPal, in your currency. You only pay once the spec and quote are confirmed. No hidden fees, no surprises.</div></div>
+  <div class="fi rv" onclick="faqToggle(this)"><div class="fq">Is there a guarantee?<span class="farr">+</span></div><div class="fa">Yes — a best price and quality guarantee, plus after-sales support with spare parts and repair guidance ready when you need them.</div></div>
+  <div class="fi rv" onclick="faqToggle(this)"><div class="fq">Can I customize color and materials?<span class="farr">+</span></div><div class="fa">Absolutely. Choose your frame finish, upholstery color and material. Add your requests to the form and we'll match them on your build.</div></div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <a class="logo" href="#" aria-label="Sunlyn Pilates World">
+      <span class="mark">SUNLYN</span>
+      <span class="script">Pilates World</span>
+    </a>
+    <div class="ftagline">High quality reformer manufacturer · Türkiye</div>
+  </div>
+  <div class="fcopy">© 2026 Sunlyn Pilates World · All rights reserved.</div>
+  <div class="flinks">
+    <a href="#quote" onclick="goQuote();return false;">Get a Quote</a>
+    <a href="https://wa.me/905355155864?text=Hello%20Sunlyn!%20I%20would%20like%20to%20request%20a%20quote." target="_blank" rel="noopener">WhatsApp</a>
+    <a href="#stats">Why Sunlyn</a>
+    <a href="#quote" onclick="goQuote();return false;">Support</a>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="mobilebar">
+  <a class="mb-quote" href="#quote" onclick="goQuote();return false;">Get a Quote</a>
+  <a class="mb-wa" href="https://wa.me/905355155864?text=Hello%20Sunlyn!%20I%20would%20like%20to%20request%20a%20quote%20for%20reformer%20%2F%20Cadillac%20equipment." target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.728-.616z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<script>
+// CURSOR
+const C=document.getElementById('cur'),C2=document.getElementById('cur2');
+let mx=window.innerWidth/2,my=window.innerHeight/2,tx=mx,ty=my;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;C.style.left=mx+'px';C.style.top=my+'px'});
+(function loop(){tx+=(mx-tx)*.11;ty+=(my-ty)*.11;C2.style.left=tx+'px';C2.style.top=ty+'px';requestAnimationFrame(loop)})();
+document.querySelectorAll('button,a,.fi,.dc-item,.scard,.step,.dcard,.response-shift,.qinput,.qselect,.qarea,.qtoggle label').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{C.style.width='20px';C.style.height='20px'});
+  el.addEventListener('mouseleave',()=>{C.style.width='10px';C.style.height='10px'});
+});
+
+// DUPLICATE TICKER for seamless loop
+(function(){const t=document.getElementById('tick');if(t)t.innerHTML+=t.innerHTML;})();
+
+// REVEAL
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('on')}),{threshold:.08});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+
+// COUNTERS
+function runCount(el){
+  const to=+el.dataset.to,sf=el.dataset.suf||'';
+  let i=0;const id=setInterval(()=>{i++;el.textContent=Math.round(to*(i/52))+sf;if(i>=52){el.textContent=to+sf;clearInterval(id)}},28);
+}
+const cobs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){document.querySelectorAll('[data-to]').forEach(runCount);cobs.disconnect()}}),{threshold:.25});
+const sel=document.getElementById('stats');if(sel)cobs.observe(sel);
+
+// FAQ
+function faqToggle(el){el.classList.toggle('open')}
+function goQuote(){document.getElementById('quote').scrollIntoView({behavior:'smooth'})}
+
+// FORM -> WHATSAPP
+function sendQuote(e){
+  e.preventDefault();
+  const f=e.target;
+  const equip=f.equipment.value;
+  const qty=(f.quantity.value||'').trim()||'Not specified';
+  const loc=(f.location.value||'').trim();
+  const reqs=(f.requests.value||'').trim()||'None';
+  const fast=f.fast.value;
+  const name=(f.fullname.value||'').trim();
+  const company=(f.company.value||'').trim();
+  if(!loc){f.location.focus();return false;}
+  let msg='Hello Sunlyn! I would like a quote.\n';
+  msg+='\nEquipment: '+equip;
+  msg+='\nQuantity: '+qty;
+  msg+='\nCountry & City: '+loc;
+  msg+='\nSpecial requests: '+reqs;
+  msg+='\nDelivery: '+fast;
+  if(name) msg+='\nName: '+name;
+  if(company) msg+='\nStudio/Company: '+company;
+  const url='https://wa.me/905355155864?text='+encodeURIComponent(msg);
+  window.open(url,'_blank');
+  return false;
+}
+</script>
+</body>
+</html>
