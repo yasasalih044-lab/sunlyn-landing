@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sunlyn Pilates World — Premium Reformer & Cadillac Manufacturer | Worldwide Shipping</title>
-<meta name="description" content="Sunlyn manufactures studio-grade Reformer and Cadillac equipment and ships worldwide from Türkiye. Best price & quality guarantee, ~10-day delivery, Stripe & PayPal. Ask for your custom quote.">
+<meta name="description" content="Sunlyn manufactures studio-grade Reformer and Cadillac equipment and ships worldwide from Turkey. Best price & quality guarantee, ~10-day delivery, Stripe & PayPal. Ask for your custom quote.">
 <meta property="og:title" content="Sunlyn Pilates World — Premium Reformers, Shipped Worldwide">
-<meta property="og:description" content="Studio-grade Reformer & Cadillac equipment, built in Türkiye. Best price & quality guarantee · ~10-day delivery · worldwide shipping.">
+<meta property="og:description" content="Studio-grade Reformer & Cadillac equipment, built in Turkey. Best price & quality guarantee · ~10-day delivery · worldwide shipping.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -334,14 +334,14 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:52px 64px;display:flex
     <path class="hp" d="M1120 740C860 560 750 300 620 90C500 -120 360 -310 120 -440" stroke-dasharray="2600" style="animation:heroFlow 30s linear infinite 2s" opacity=".55"/>
   </svg>
   <div class="hero-l">
-    <div class="hbadge"><span class="bdot"></span>Reformer &amp; Cadillac Manufacturer · Türkiye</div>
+    <div class="hbadge"><span class="bdot"></span>Reformer &amp; Cadillac Manufacturer · Turkey</div>
     <h1>
       REFORMER &amp; CADILLAC<br>
-      <span class="r">MADE IN TÜRKİYE.</span><br>
+      <span class="r">MADE IN TURKEY.</span><br>
       SHIPPED WORLDWIDE.
     </h1>
     <p class="hsub">
-      Sunlyn builds <strong>studio-grade Reformer and Cadillac equipment</strong> and ships it worldwide from Türkiye.
+      Sunlyn builds <strong>studio-grade Reformer and Cadillac equipment</strong> and ships it worldwide from Turkey.
       Premium quality, <strong>best price guarantee</strong>, and around <strong>10-day delivery</strong> — so your studio opens strong, on time.
     </p>
     <div class="ctarow">
@@ -357,13 +357,91 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:52px 64px;display:flex
     <span class="ti r">●</span><span class="ti">REFORMER</span>
     <span class="ti r">●</span><span class="ti">CADILLAC</span>
     <span class="ti r">●</span><span class="ti">WORLDWIDE SHIPPING</span>
-    <span class="ti r">●</span><span class="ti">MADE IN TÜRKİYE</span>
+    <span class="ti r">●</span><span class="ti">MADE IN TURKEY</span>
     <span class="ti r">●</span><span class="ti">BEST PRICE GUARANTEE</span>
     <span class="ti r">●</span><span class="ti">PREMIUM QUALITY</span>
     <span class="ti r">●</span><span class="ti">~10-DAY DELIVERY</span>
     <span class="ti r">●</span><span class="ti">STRIPE &amp; PAYPAL</span>
   </div>
 </div>
+
+<!-- QUOTE (moved up: hero → form → trust content) -->
+<section id="quote">
+  <div class="pglow"></div>
+  <div class="smx" style="position:relative;z-index:1">
+    <div class="rv" style="text-align:center">
+      <p class="stag" style="display:flex;justify-content:center">// Get your quote</p>
+      <div class="sline" style="margin:12px auto"></div>
+      <h2 class="stitle">TELL US WHAT YOU NEED.<br><span style="color:var(--o)">GET YOUR QUOTE.</span></h2>
+      <p style="font-size:15px;color:#8A7A6C;max-width:520px;margin:14px auto 0;line-height:1.8">Fill the form below — we reply on WhatsApp with our best price and a quality guarantee. Takes a minute, no commitment.</p>
+      <div class="guar-banner"><span class="tdot"></span>Best price &amp; quality guarantee · Ships worldwide · ~10-day delivery · Stripe &amp; PayPal</div>
+    </div>
+
+    <form class="qform rv d1" onsubmit="return sendQuote(event)">
+      <div class="qrow">
+        <label class="qlbl" for="q-equip">Which equipment?</label>
+        <select class="qselect" id="q-equip" name="equipment">
+          <option>Reformer</option>
+          <option>Cadillac / Trapeze Table</option>
+          <option>Reformer + Cadillac</option>
+          <option>Wall Unit Reformer</option>
+          <option>Full studio set</option>
+          <option>Other (tell us below)</option>
+        </select>
+      </div>
+      <div class="qrow two">
+        <div>
+          <label class="qlbl" for="q-qty">How many units?</label>
+          <input class="qinput" id="q-qty" name="quantity" type="number" min="1" inputmode="numeric" placeholder="e.g. 5">
+        </div>
+        <div>
+          <label class="qlbl" for="q-loc">Country &amp; city</label>
+          <input class="qinput" id="q-loc" name="location" type="text" placeholder="e.g. Berlin, Germany" required>
+        </div>
+      </div>
+      <div class="qrow">
+        <label class="qlbl" for="q-req">Special requests <span>— color, upholstery, material (optional)</span></label>
+        <textarea class="qarea" id="q-req" name="requests" placeholder="Color, upholstery material, frame finish, accessories…"></textarea>
+      </div>
+      <div class="qrow">
+        <label class="qlbl">Do you need fast delivery? <span>— we ship in ~10 days</span></label>
+        <div class="qtoggle">
+          <label><input type="radio" name="fast" value="Yes, fast delivery (~10 days)" checked><span class="pill">Yes, ~10 days</span></label>
+          <label><input type="radio" name="fast" value="Standard delivery is fine"><span class="pill">Standard is fine</span></label>
+        </div>
+      </div>
+      <div class="qrow two">
+        <div>
+          <label class="qlbl" for="q-name">Your name <span>(optional)</span></label>
+          <input class="qinput" id="q-name" name="fullname" type="text" placeholder="Your name">
+        </div>
+        <div>
+          <label class="qlbl" for="q-company">Studio / company <span>(optional)</span></label>
+          <input class="qinput" id="q-company" name="company" type="text" placeholder="Studio name">
+        </div>
+      </div>
+      <button class="qsubmit" type="submit">
+        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.728-.616z"/></svg>
+        Send My Request via WhatsApp
+      </button>
+      <p class="qhint">Opens WhatsApp with your details pre-filled — just hit send. We usually reply within hours.</p>
+    </form>
+
+    <div class="support-box rv d2">
+      <div>
+        <div class="support-kicker">Prefer to chat first?</div>
+        <h3>Message us on WhatsApp.</h3>
+        <p>Questions about models, materials, shipping or payment? Talk to us before you order — we'll help you choose.</p>
+      </div>
+      <a href="https://wa.me/905355155864?text=Hello%20Sunlyn!%20I%20have%20a%20question%20about%20your%20reformer%20%2F%20Cadillac%20equipment%20before%20I%20order." target="_blank" rel="noopener" class="support-btn">
+        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.728-.616z"/></svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+
+    <p class="pnote">Stripe &amp; PayPal · Ships to every country · Best price &amp; quality guarantee · No hidden fees</p>
+  </div>
+</section>
 
 <!-- REALITY CHECK -->
 <div class="biktor">
@@ -384,7 +462,7 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:52px 64px;display:flex
     <h2>OPENING A STUDIO?<br><span>DON'T WAIT MONTHS.</span></h2>
     <p>
       Cheap imports cut corners and clients notice on day one. And most overseas orders keep you waiting weeks.
-      <strong>Sunlyn is built to last and ships in about 10 days</strong> — factory-direct from Türkiye, so you open on schedule.
+      <strong>Sunlyn is built to last and ships in about 10 days</strong> — factory-direct from Turkey, so you open on schedule.
     </p>
     <div class="response-shift rv d1">
       <div class="time-block slow">
@@ -496,14 +574,14 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:52px 64px;display:flex
     </div>
     <div class="sgrid">
       <div class="scard rv"><span class="snum2" data-to="10" data-suf="">0</span><div class="slbl">Days Avg. Delivery</div><div class="ssub">Production + worldwide dispatch</div></div>
-      <div class="scard rv d1"><span class="snum2" data-to="190" data-suf="+">0+</span><div class="slbl">Countries We Ship To</div><div class="ssub">Export from Türkiye, every continent</div></div>
+      <div class="scard rv d1"><span class="snum2" data-to="190" data-suf="+">0+</span><div class="slbl">Countries We Ship To</div><div class="ssub">Export from Turkey, every continent</div></div>
       <div class="scard rv d2"><span class="snum2" data-to="100" data-suf="%">0%</span><div class="slbl">Price &amp; Quality Guarantee</div><div class="ssub">Best price, built to last</div></div>
     </div>
     <div class="sim rv" style="transition-delay:.1s">
       <div style="padding-left:22px">
         <p class="stag">// Factory-direct pricing</p>
         <h3 style="font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:2px;margin:10px 0 6px">WHY STUDIOS OVERPAY — AND HOW SUNLYN FIXES IT</h3>
-        <p style="font-size:12.5px;color:#6A5C4E">Buying through local distributors stacks markups. Sunlyn ships straight from our workshop in Türkiye:</p>
+        <p style="font-size:12.5px;color:#6A5C4E">Buying through local distributors stacks markups. Sunlyn ships straight from our workshop in Turkey:</p>
         <div class="simgrid">
           <div class="simcol"><div class="simlbl">Buying Local</div><div class="simn" style="color:rgba(255,122,26,.5)">2–3×</div><div class="simsub">distributor + reseller margin</div></div>
           <div class="simcol simdiv"><div class="simlbl">Sunlyn Direct</div><div class="simn">1×</div><div class="simsub">straight from the factory</div></div>
@@ -546,7 +624,7 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:52px 64px;display:flex
         </div>
         <div class="dc-item rv d2">
           <div class="dc-item-tag">03 — Shipping</div>
-          <h4>WORLDWIDE FROM TÜRKİYE</h4>
+          <h4>WORLDWIDE FROM TURKEY</h4>
           <p>Factory-direct export to every country, with secure Stripe &amp; PayPal payment and ~10-day delivery.</p>
         </div>
         <div class="dc-item rv d3">
@@ -585,84 +663,6 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:52px 64px;display:flex
   </div>
 </section>
 
-<!-- QUOTE -->
-<section id="quote">
-  <div class="pglow"></div>
-  <div class="smx" style="position:relative;z-index:1">
-    <div class="rv" style="text-align:center">
-      <p class="stag" style="display:flex;justify-content:center">// Get started</p>
-      <div class="sline" style="margin:12px auto"></div>
-      <h2 class="stitle">ASK FOR<br><span style="color:var(--o)">YOUR QUOTE.</span></h2>
-      <p style="font-size:15px;color:#8A7A6C;max-width:520px;margin:14px auto 0;line-height:1.8">Tell us what you need — we'll reply on WhatsApp with our best price and a quality guarantee. No commitment.</p>
-      <div class="guar-banner"><span class="tdot"></span>Best price &amp; quality guarantee · Ships worldwide · ~10-day delivery · Stripe &amp; PayPal</div>
-    </div>
-
-    <form class="qform rv d1" onsubmit="return sendQuote(event)">
-      <div class="qrow">
-        <label class="qlbl" for="q-equip">Which equipment?</label>
-        <select class="qselect" id="q-equip" name="equipment">
-          <option>Reformer</option>
-          <option>Cadillac / Trapeze Table</option>
-          <option>Reformer + Cadillac</option>
-          <option>Wall Unit Reformer</option>
-          <option>Full studio set</option>
-          <option>Other (tell us below)</option>
-        </select>
-      </div>
-      <div class="qrow two">
-        <div>
-          <label class="qlbl" for="q-qty">How many units?</label>
-          <input class="qinput" id="q-qty" name="quantity" type="number" min="1" inputmode="numeric" placeholder="e.g. 5">
-        </div>
-        <div>
-          <label class="qlbl" for="q-loc">Country &amp; city</label>
-          <input class="qinput" id="q-loc" name="location" type="text" placeholder="e.g. Berlin, Germany" required>
-        </div>
-      </div>
-      <div class="qrow">
-        <label class="qlbl" for="q-req">Special requests <span>— color, upholstery, material (optional)</span></label>
-        <textarea class="qarea" id="q-req" name="requests" placeholder="Color, upholstery material, frame finish, accessories…"></textarea>
-      </div>
-      <div class="qrow">
-        <label class="qlbl">Do you need fast delivery? <span>— we ship in ~10 days</span></label>
-        <div class="qtoggle">
-          <label><input type="radio" name="fast" value="Yes, fast delivery (~10 days)" checked><span class="pill">Yes, ~10 days</span></label>
-          <label><input type="radio" name="fast" value="Standard delivery is fine"><span class="pill">Standard is fine</span></label>
-        </div>
-      </div>
-      <div class="qrow two">
-        <div>
-          <label class="qlbl" for="q-name">Your name <span>(optional)</span></label>
-          <input class="qinput" id="q-name" name="fullname" type="text" placeholder="Your name">
-        </div>
-        <div>
-          <label class="qlbl" for="q-company">Studio / company <span>(optional)</span></label>
-          <input class="qinput" id="q-company" name="company" type="text" placeholder="Studio name">
-        </div>
-      </div>
-      <button class="qsubmit" type="submit">
-        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.728-.616z"/></svg>
-        Send My Request via WhatsApp
-      </button>
-      <p class="qhint">Opens WhatsApp with your details pre-filled — just hit send. We usually reply within hours.</p>
-    </form>
-
-    <div class="support-box rv d2">
-      <div>
-        <div class="support-kicker">Prefer to chat first?</div>
-        <h3>Message us on WhatsApp.</h3>
-        <p>Questions about models, materials, shipping or payment? Talk to us before you order — we'll help you choose.</p>
-      </div>
-      <a href="https://wa.me/905355155864?text=Hello%20Sunlyn!%20I%20have%20a%20question%20about%20your%20reformer%20%2F%20Cadillac%20equipment%20before%20I%20order." target="_blank" rel="noopener" class="support-btn">
-        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.728-.616z"/></svg>
-        Chat on WhatsApp
-      </a>
-    </div>
-
-    <p class="pnote">Stripe &amp; PayPal · Ships to every country · Best price &amp; quality guarantee · No hidden fees</p>
-  </div>
-</section>
-
 <!-- FAQ -->
 <div class="faqwrap">
   <div class="rv">
@@ -671,7 +671,7 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:52px 64px;display:flex
     <h2 class="stitle" style="margin-bottom:40px">QUESTIONS?<br><span style="color:var(--o)">ANSWERED.</span></h2>
   </div>
   <div class="fi rv" onclick="faqToggle(this)"><div class="fq">What equipment do you manufacture?<span class="farr">+</span></div><div class="fa">Studio-grade Reformers, Cadillacs (trapeze tables), wall-unit reformers and accessories — built to order with your choice of color, upholstery and material.</div></div>
-  <div class="fi rv" onclick="faqToggle(this)"><div class="fq">Do you ship to my country?<span class="farr">+</span></div><div class="fa">Yes. We export worldwide from Türkiye to every country and handle crating and freight. Tell us your country and city and we'll give you an exact delivery quote.</div></div>
+  <div class="fi rv" onclick="faqToggle(this)"><div class="fq">Do you ship to my country?<span class="farr">+</span></div><div class="fa">Yes. We export worldwide from Turkey to every country and handle crating and freight. Tell us your country and city and we'll give you an exact delivery quote.</div></div>
   <div class="fi rv" onclick="faqToggle(this)"><div class="fq">How long does delivery take?<span class="farr">+</span></div><div class="fa">About 10 days on average for production and dispatch. Express options are available — just let us know your studio's opening date and we'll work to it.</div></div>
   <div class="fi rv" onclick="faqToggle(this)"><div class="fq">How do I pay?<span class="farr">+</span></div><div class="fa">Securely via Stripe or PayPal, in your currency. You only pay once the spec and quote are confirmed. No hidden fees, no surprises.</div></div>
   <div class="fi rv" onclick="faqToggle(this)"><div class="fq">Is there a guarantee?<span class="farr">+</span></div><div class="fa">Yes — a best price and quality guarantee, plus after-sales support with spare parts and repair guidance ready when you need them.</div></div>
@@ -685,7 +685,7 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:52px 64px;display:flex
       <span class="mark">SUNLYN</span>
       <span class="script">Pilates World</span>
     </a>
-    <div class="ftagline">High quality reformer manufacturer · Türkiye</div>
+    <div class="ftagline">High quality reformer manufacturer · Turkey</div>
   </div>
   <div class="fcopy">© 2026 Sunlyn Pilates World · All rights reserved.</div>
   <div class="flinks">
